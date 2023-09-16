@@ -25,7 +25,7 @@ const Body = () => {
   
 
   return (
-    <div className="shadow-2xl gap-2 p-2 rounded-2xl">
+    <div className="shadow-2xl gap-2 p-2 pb-10 rounded-2xl ">
         <SubNavBar isActive={isActive} setIsActive={setIsActive} />
         <div className='flex flex-col  w-full h-auto p-2 '>
           <Projects models={models} />
