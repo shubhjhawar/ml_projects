@@ -1,0 +1,12 @@
+/* styles/fonts.css */
+@font-face {
+    font-family: 'Jakarta Sans';
+    src: url('/fonts/jakarta-sans-regular.ttf') format('truetype');
+    /* Add additional font variations here (e.g., bold, italic, etc.) */
+  }
+  
+  /* Define font usage */
+  body {
+    font-family: 'Jakarta Sans', sans-serif;
+  }
+  
