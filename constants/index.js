@@ -3,12 +3,12 @@ const classificationModels = {
     desc: "these are some of the projets ",
     projects: [
         {
-            title: "Backend Development Intern",
+            title: "Backend Development Intern1",
             description: "gdfhdusfhuisdhf sdhfuisdf fhuisd fsdhb alaxy",
             icon: "something",
         },
         {
-            title: "Backend Development Intern",
+            title: "Backend Development Intern2",
             description: "gdfhdusfhuisdhf sdhfuisdf fhuisd fsdhb alaxy",
             icon: "something",
         },
@@ -20,12 +20,12 @@ const regressionModels = {
     desc: "these are some of the projets ",
     projects: [
         {
-            title: "Backend Development Intern",
+            title: "Backend Development Intern3",
             description: "gdfhdusfhuisdhf sdhfuisdf fhuisd fsdhb alaxy",
             icon: "something",
         },
         {
-            title: "Backend Development Intern",
+            title: "Backend Development Intern4",
             description: "gdfhdusfhuisdhf sdhfuisdf fhuisd fsdhb alaxy",
             icon: "something",
         },
@@ -37,12 +37,12 @@ const deepLearningModels = {
     desc: "these are some of the projets ",
     projects: [
         {
-            title: "Backend Development Intern",
+            title: "Backend Development Intern5",
             description: "gdfhdusfhuisdhf sdhfuisdf fhuisd fsdhb alaxy",
             icon: "something",
         },
         {
-            title: "Backend Development Intern",
+            title: "Backend Development Intern6",
             description: "gdfhdusfhuisdhf sdhfuisdf fhuisd fsdhb alaxy",
             icon: "something",
         },
