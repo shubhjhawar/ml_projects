@@ -14,7 +14,7 @@ const Banner = () => {
         />
      </div>
 
-      <div className='flex md:flex-row-reverse max-md:flex-col w-full h-auto'>
+      <div className='border-[10px]  flex md:flex-row-reverse max-md:flex-col w-full h-auto'>
         <Image 
           src={astro}
           alt="astro"
