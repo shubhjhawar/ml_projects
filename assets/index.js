@@ -4,6 +4,8 @@ import github from "./github.png";
 import linkedin from "./linkedin.png";
 import twitter from "./twitter.png";
 import logo from "./logo-black.svg";
+import moon_icon from "./moon.png";
+import sun from "./sun.png";
 
 export {
     moon,
@@ -11,5 +13,7 @@ export {
     github,
     linkedin,
     twitter,
-    logo
+    logo,
+    moon_icon, 
+    sun
 }

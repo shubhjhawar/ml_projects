@@ -1,16 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import Link from 'next/link';
 
-const Header = () => {
-  const [isDay, setIsDay] = useState(true);
 
-  // Function to toggle day/night mode
-  const toggleDayNight = () => {
-    setIsDay(!isDay);
-    // You can add logic here to update your theme or apply dark mode styles
-  };
+import { moon_icon, sun } from '@/assets';
+import Image from 'next/image';
+import { Context } from '@/pages/layout';
+
+const Header = () => {
+  
+  const [isNight, setIsNight] = useContext(Context);
+
+
   return (
-    <header className="flex justify-between items-center w-full py-2">
+    <header className={`flex justify-between items-center w-full py-2 ${isNight ? "text-white"  : 'text-black'}`}>
       <div className='cursor-pointer z-10'>
         <Link href="/">
           <p className=''>LOGO</p>
@@ -26,14 +28,32 @@ const Header = () => {
 
         <button
           type="button"
-          onClick={() => setIsDay(prevDay => !prevDay)}
+          onClick={() => setIsNight(prev => !prev)}
+          className=''
         >
-          <div className={`w-12 h-6 rounded-full p-1 duration-300 ease-in-out cursor-pointer ${isDay ? 'bg-blue-500' : 'bg-gray-300'}`}>
+          <div className={`w-12 h-6 rounded-full p-1 duration-300 ease-in-out cursor-pointer ${isNight ? 'bg-white ' : 'bg-gray-300'}`}>
+            <div className={`flex gap-2`}>
+           
+
+            <div className="flex gap-2">
+              <Image
+                src={sun}
+                alt="icon"
+                className={`w-4 h-4`}
+              />
+              <Image
+                src={moon_icon}
+                alt="icon"
+                className={`w-4 h-4`}
+              />
+              </div>
+            </div>
+
             <div
-              className={`w-4 h-4  rounded-full duration-300 ease-in-out transform ${
-                isDay ? 'translate-x-6 bg-yellow-500' : 'bg-gray-600'
+              className={`relative bottom-4 w-4 h-4 z-10 rounded-full duration-300 ease-in-out transform ${
+                isNight ? 'translate-x-6 bg-slate-950' : 'bg-gray-600'
               }`}
-            ></div>
+            />
           </div>
         </button>
 

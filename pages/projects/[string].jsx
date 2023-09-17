@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useContext} from 'react';
 import '../../app/globals.css';
 import '../../styles/fonts.css';
 import { useRouter } from 'next/router'; 
@@ -13,7 +13,7 @@ const ProjectPage = () => {
 
   const [projectDetails, setProjectDetails] = useState(null);
 
- // ...
+  // const [isNight,setIsNight] = useContext(Context);
 
 useEffect(() => {
   console.log("Project Title from URL:", projectTitle);

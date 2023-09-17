@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
 import {twitter, linkedin, logo, github} from "@/assets";
+import { Context } from '@/pages/layout';
 
 const Footer = () => {
+  const [isNight, setIsNight] = useContext(Context);
+
   function scrollToTop() {
     window.scrollTo({
       top: 0,
@@ -15,14 +18,14 @@ const Footer = () => {
     <div className="p-5 mt-2">
       <div className="flex justify-between items-center">
         <div
-          className="text-gray-400 tracking-wide text-lg hover:scale-105 hover:cursor-pointer"
+          className={` tracking-wide text-lg hover:scale-105 hover:cursor-pointer ${isNight ? 'text-white' :'text-gray-400' }`}
           onClick={() => scrollToTop()}
           title="Scroll to Top"
         >
           Shubh Jhawar - Data Scientist
         </div>
 
-        <div className='flex flex-col justify-center items-center text-gray-400 tracking-wide text-md hover:scale-105'>
+        <div className={`flex flex-col justify-center items-center tracking-wide text-md hover:scale-105 ${isNight ? 'text-white' :'text-gray-400' } `}>
           <p>Contact Me-</p>
           <a href="mailto:shubjhawar78@gmail.com" className='hover:underline'>
             shubjhawar78@gmail.com

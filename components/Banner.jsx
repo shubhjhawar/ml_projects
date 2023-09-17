@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Image from 'next/image';
 import { moon, astro } from '../assets';
+import { Context } from '@/pages/layout';
 
 const Banner = () => {
+  const [isNight, setIsNight] = useContext(Context)
+
   return (
     <div className="my-5">
       <div className="relative min-h-[200px] max-h-[450px]">
@@ -21,7 +24,7 @@ const Banner = () => {
             alt="astro"
             className="w-1/3 scale-x-[-1] max-md:h-[400px] max-md:w-full"
           />
-          <div className="flex flex-col justify-end w-2/3 pl-4 text-gray-400 tracking-wide leading-[30px] h-auto max-md:hidden">
+          <div className={`flex flex-col justify-end w-2/3 pl-4 tracking-wide leading-[30px] h-auto max-md:hidden ${isNight ? "text-white": "text-gray-400"}`}>
             Description of the website about 200 words - 3/4 lines
             Description of the website about 200 words - 3/4 lines
             Description of the website about 200 words - 3/4 lines
