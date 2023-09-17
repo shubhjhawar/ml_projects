@@ -3,29 +3,26 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 import {twitter, linkedin, logo, github} from "@/assets";
-import { Context } from '@/pages/layout';
 
 const Footer = () => {
-  const [isNight, setIsNight] = useContext(Context);
 
   function scrollToTop() {
     window.scrollTo({
       top: 0,
-      behavior: "smooth" // Optional: Add smooth scrolling animation
+      behavior: "smooth" 
     });
   }
   return (
     <div className="p-5 mt-2">
       <div className="flex justify-between items-center">
         <div
-          className={` tracking-wide text-lg hover:scale-105 hover:cursor-pointer ${isNight ? 'text-white' :'text-gray-400' }`}
+          className={` tracking-wide text-lg hover:scale-105 hover:cursor-pointer text-gray-400 dark:text-white `}
           onClick={() => scrollToTop()}
           title="Scroll to Top"
         >
           Shubh Jhawar - Data Scientist
         </div>
-
-        <div className={`flex flex-col justify-center items-center tracking-wide text-md hover:scale-105 ${isNight ? 'text-white' :'text-gray-400' } `}>
+        <div className={`flex flex-col justify-center items-center tracking-wide text-md hover:scale-105text-gray-400 dark:text-white  `}>
           <p>Contact Me-</p>
           <a href="mailto:shubjhawar78@gmail.com" className='hover:underline'>
             shubjhawar78@gmail.com

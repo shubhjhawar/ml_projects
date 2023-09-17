@@ -13,7 +13,6 @@ const ProjectPage = () => {
 
   const [projectDetails, setProjectDetails] = useState(null);
 
-  // const [isNight,setIsNight] = useContext(Context);
 
 useEffect(() => {
   console.log("Project Title from URL:", projectTitle);

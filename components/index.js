@@ -7,6 +7,7 @@ import SubNavBar from "./SubNavBar";
 import Projects from "./Projects";
 import ProjectCard from "./ProjectCard";
 
+
 export {
     Header, 
     Footer,
@@ -15,5 +16,6 @@ export {
     Body,
     SubNavBar,
     Projects,
-    ProjectCard
+    ProjectCard,
+
 };

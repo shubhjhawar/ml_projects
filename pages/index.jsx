@@ -1,22 +1,17 @@
-import React, {useState} from 'react';
-import "../app/globals.css";
-import '../styles/fonts.css';
+// pages/index.jsx
+import React from 'react';
 import Layout from './layout';
 import { Home } from '@/components';
-import { Context } from './index';
 
-// export const Context = React.createContext();
+const IndexPage = () => {
 
-const MyApp = () => {
-  const [isNight, setIsNight] = useState(false);
-  
+  // Your component code here
+
   return (
-    // <Context.Provider value={[isNight, setIsNight]}>
-      <Layout>
+    <Layout>
       <Home />
-      </Layout>
-    // </Context.Provider>
-  )
-}
+    </Layout>
+  );
+};
 
-export default MyApp
+export default IndexPage;
