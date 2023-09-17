@@ -5,6 +5,8 @@ import Banner from "./Banner";
 import Body from "./Body";
 import SubNavBar from "./SubNavBar";
 import Projects from "./Projects";
+import ProjectCard from "./ProjectCard";
+
 
 export {
     Header, 
@@ -13,5 +15,7 @@ export {
     Banner,
     Body,
     SubNavBar,
-    Projects
+    Projects,
+    ProjectCard,
+
 };

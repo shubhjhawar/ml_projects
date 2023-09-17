@@ -1,15 +1,17 @@
+// pages/index.jsx
 import React from 'react';
-import "../app/globals.css";
-import '../styles/fonts.css';
 import Layout from './layout';
 import { Home } from '@/components';
 
-const MyApp = () => {
+const IndexPage = () => {
+
+  // Your component code here
+
   return (
     <Layout>
       <Home />
     </Layout>
-  )
-}
+  );
+};
 
-export default MyApp
+export default IndexPage;
