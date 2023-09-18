@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 
 import Layout from '../layout';
 import { ProjectCard } from '@/components';
-import { classificationModels, regressionModels, deepLearningModels } from '@/constants';
+import { classificationModels, regressionModels, MiscModels } from '@/constants';
 
 const ProjectPage = () => {
   const router = useRouter(); 
@@ -17,7 +17,7 @@ const ProjectPage = () => {
 useEffect(() => {
   console.log("Project Title from URL:", projectTitle);
 
-  const categories = [classificationModels, regressionModels, deepLearningModels];
+  const categories = [classificationModels, regressionModels, MiscModels];
 
   for (const category of categories) {
     const matchingProject = category.projects.find(project => project.title === projectTitle.string);
