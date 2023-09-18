@@ -1,7 +1,7 @@
 import React, {useState, useEffect, useContext} from 'react'
 
 import { SubNavBar, Projects } from './';
-import { classificationModels, regressionModels, deepLearningModels } from '@/constants';
+import { classificationModels, regressionModels, MiscModels } from '@/constants';
 // import { useTheme } from './ThemeProvider';
 
 
@@ -20,7 +20,7 @@ const Body = () => {
     }
     else if(isActive==2)
     {
-      setModels(deepLearningModels);
+      setModels(MiscModels);
     }
   }, [isActive])
 

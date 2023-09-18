@@ -23,7 +23,7 @@ const Projects = ({models}) => {
                     key={index}
                 >
                     <div className={`transition-transform transform hover:scale-105 ease-in ${styles.projectsContainer} `} >
-                        <div className={`p-2 flex rounded-xl ${index !==0 ? 'flex-row-reverse bg-gradient-to-l' : 'bg-gradient-to-r'} text-black dark:from-gray-400 dark:to-zinc-600 dark:text-white`}>
+                        <div className={`p-2 flex rounded-xl ${index%2 !== 0 ? 'flex-row-reverse bg-gradient-to-l' : 'bg-gradient-to-r'} text-black dark:from-gray-400 dark:to-zinc-600 dark:text-white`}>
                         <div className='flex flex-col w-2/3 px-2 items-center justify-center'>
                                 <div className='text-2xl font-semibold flex'>
                                 {project.title}
@@ -33,9 +33,9 @@ const Projects = ({models}) => {
                                 </div>
                         </div>
                             <Image 
-                                src={moon}
+                                src={project.icon}
                                 alt="img"
-                                className='w-1/3 rounded-2xl'
+                                className='w-1/3 h-[200px] rounded-2xl p-3'
                             />
                         </div>
                     </div>

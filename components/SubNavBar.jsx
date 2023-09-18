@@ -39,7 +39,7 @@ const SubNavBar = ({ isActive, setIsActive }) => {
           }`}
         >
           <button type="button" onClick={() => setIsActive(2)}>
-            <p className='uppercase'>deep learning</p>
+            <p className='uppercase'>Miscellaneous</p>
           </button>
         </div>
       </div>
