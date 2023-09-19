@@ -23,7 +23,7 @@ const Header = () => {
       </div>
 
       <div className="flex items-center justify-center text-2xl font-semibold absolute right-0 w-full">
-        <p className='hidden sm:block'>My Data Science Odyssey</p>
+        <p className='hidden sm:block'>My Machine Learning / Data Science Odyssey</p>
       </div>
 
 
