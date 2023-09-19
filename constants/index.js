@@ -18,16 +18,19 @@ const classificationModels = {
             title: "Cifar 10 Image Classification",
             description: "Classifying diverse 32x32 pixel images into ten distinct categories.",
             icon: cifar,
+            code: 'https://github.com/shubhjhawar/CIFAR-10-IMAGE-CLASSIFICATION'
         },
         {
             title: "Loan Application",
             description: "the model predicts if the person applying for a loan would be able to repy it back in time or not",
             icon: loan,
+            code: 'https://github.com/shubhjhawar/Loan-Application-Status'
         },
         {
             title: "Fashion MNIST",
             description: "works same as CIFAR10 but on fashion articles and predicts clothing items",
             icon: fashion,
+            code: 'https://github.com/shubhjhawar/Fashion-MNIST',
         },
     ]
 }
@@ -40,16 +43,19 @@ const regressionModels = {
             title: "Car Price Estimator",
             description: "This models helps us determine the best value of a second hand car",
             icon: redcar,
+            code: 'https://github.com/shubhjhawar/CAR-PRICE-ESTIMATOR'
         },
         {
             title: "Real Estate Price Estimator",
             description: "after comparing all the things that affects the price of the house, the model gives us an appropriate amount for the property in question",
             icon: real,
+            code: 'https://github.com/shubhjhawar/real-estate-prize-predictor'
         },
         {
             title: "Stock Price Predictor",
             description: "real time stock prediction for next 7 days using ML model.",
             icon: stock,
+            code: 'https://github.com/shubhjhawar/Stock-Prize-Prediction'
         },
     ]
 }
@@ -62,6 +68,7 @@ const MiscModels = {
             title: "Cats vs Dogs",
             description: "simple deep learing CNN models which tells us if the picture is a cat or a dog.",
             icon: catvdog,
+            code: 'https://github.com/shubhjhawar/CATS-VS-DOGS'
         },
     ]
 }
