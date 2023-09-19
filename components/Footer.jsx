@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import {AiOutlineArrowUp} from "react-icons/ai";
 
 import {twitter, linkedin, logo, github} from "@/assets";
 
@@ -14,15 +15,16 @@ const Footer = () => {
   }
   return (
     <div className="p-5 mt-2">
-      <div className="flex justify-between items-center">
+      <div className="flex max-sm:flex-col gap-5 justify-between items-center">
         <div
-          className={` tracking-wide text-lg hover:scale-105 hover:cursor-pointer text-gray-400 dark:text-white `}
+          className={`flex items-center gap-1 tracking-wide text-lg hover:scale-105 hover:cursor-pointer text-gray-400 dark:text-white `}
           onClick={() => scrollToTop()}
           title="Scroll to Top"
         >
+          <AiOutlineArrowUp />
           Shubh Jhawar - Data Scientist
         </div>
-        <div className={`flex flex-col justify-center items-center tracking-wide text-md hover:scale-105text-gray-400 dark:text-white  `}>
+        <div className={`flex flex-col justify-center items-center tracking-wide text-md hover:scale-105 text-gray-400 dark:text-white  `}>
           <p>Contact Me-</p>
           <a href="mailto:shubjhawar78@gmail.com" className='hover:underline'>
             shubjhawar78@gmail.com
