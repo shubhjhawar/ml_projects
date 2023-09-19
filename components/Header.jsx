@@ -7,7 +7,7 @@ import { logolight, logodark } from '@/assets';
 const Header = () => {
   return (
     <header className={`flex justify-between items-center w-full py-2 dark:text-white `}>
-      <div className='cursor-pointer z-10'>
+      <div className='flex items-center justify-center px-2 mt-2 cursor-pointer z-10'>
         <Link href="/">
           <Image 
             src={logolight}
@@ -22,10 +22,11 @@ const Header = () => {
         </Link>
       </div>
 
-      <div className="flex items-center justify-center text-2xl font-semibold absolute right-0 w-full">My Machine Learning Odyssey</div>
-
-      <div className="flex gap-2">
+      <div className="flex items-center justify-center text-2xl font-semibold absolute right-0 w-full">
+        <p className='hidden sm:block'>My Data Science Odyssey</p>
       </div>
+
+
     </header>
   );
 }

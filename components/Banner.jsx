@@ -15,7 +15,7 @@ const Banner = () => {
         <Image
           src={mlwall}
           alt="moon"
-          className="relative w-full h-[300px] object-cover md:rounded-2xl shadow-2xl object-contain"
+          className="relative w-full h-[300px] object-cover md:rounded-2xl shadow-custom object-contain"
         />
 
         <div className="flex flex md:flex-row-reverse max-md:flex-col w-full flex-wrap -translate-y-[250px]">
@@ -27,8 +27,7 @@ const Banner = () => {
           <div className={`flex flex-col justify-end w-2/3 pl-4 tracking-wide leading-[30px] h-auto max-md:hidden dark:text-white text-gray-400 `}>
             Hey guys! Welcome to my Machine Learning portfolio! 
             As a data scientist, I've crafted a collection of projects for you to explore and test firsthand. 
-            Explore the world of data-driven innovation I created for you!
-            
+            Explore the world of data-driven innovation that I created for you!
           </div>
         </div>
       </div>

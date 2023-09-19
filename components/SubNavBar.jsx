@@ -1,10 +1,12 @@
 import React, { useContext, useState} from 'react';
 import { styles } from '@/styles';
+import { GiStarShuriken } from 'react-icons/gi';
+import { MdTrendingUp, MdCategory } from 'react-icons/md';
 
 const SubNavBar = ({ isActive, setIsActive }) => {
 
   return (
-    <div className={`rounded-xl shadow-2xl lg:text-4xl text-md font-semibold p-5 gap-2 dark:bg-zinc-500`}>
+    <div className={`rounded-xl shadow-2xl lg:text-3xl text-md font-semibold p-5 gap-2 dark:bg-zinc-500 dark:bg-opacity-50`}>
       <div className='flex flex-wrap center justify-around gap-5'>
         <div
           className={`p-5 ${styles.MainButtonHovered} ${
@@ -14,8 +16,9 @@ const SubNavBar = ({ isActive, setIsActive }) => {
           }`}
           
         >
-          <button type="button" onClick={() => setIsActive(0)}>
-            <p className='uppercase'>Classification</p>
+          <button type="button" onClick={() => setIsActive(0)} className="flex gap-2 items-center justify-center">
+            <MdCategory className='max-md:w-8 max-md:h-8' />
+            <p className='uppercase block max-md:hidden'>Classification</p>
           </button>
         </div>
 
@@ -26,8 +29,9 @@ const SubNavBar = ({ isActive, setIsActive }) => {
               : 'shadow-custom bg-white'
           }`}
         >
-          <button type="button" onClick={() => setIsActive(1)}>
-            <p className='uppercase'>regression</p>
+          <button type="button" onClick={() => setIsActive(1)} className="flex gap-2 items-center justify-center">
+            <MdTrendingUp className='max-md:w-8 max-md:h-8' />
+            <p className='uppercase block max-md:hidden'>regression</p>
           </button>
         </div>
 
@@ -38,8 +42,9 @@ const SubNavBar = ({ isActive, setIsActive }) => {
               : 'shadow-custom bg-white'
           }`}
         >
-          <button type="button" onClick={() => setIsActive(2)}>
-            <p className='uppercase'>Miscellaneous</p>
+          <button type="button" onClick={() => setIsActive(2)} className='flex gap-2 items-center justify-center'>
+            <GiStarShuriken className='max-md:w-8 max-md:h-8' />
+            <p className='uppercase block max-md:hidden'>Miscellaneous</p>
           </button>
         </div>
       </div>

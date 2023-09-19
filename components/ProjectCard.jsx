@@ -15,13 +15,13 @@ const ProjectCard = ({details}) => {
             <div className="text-5xl font-bold mb-5 hover:underline tracking-wide ">
                 {details?.title}
             </div>
-            <div className="flex w-full justify-around text-gray-600 tracking-wide leading-[35px] dark:text-white ">
-                <div className='w-1/2 px-2 my-2 ml-5 hover:scale-105'>
+            <div className="flex max-md:flex-col max-md:items-center w-full justify-around text-gray-600 tracking-wide leading-[35px] dark:text-white ">
+                <div className='max-md:w-full w-1/2 px-2 my-2 max-md:ml-0 ml-5 hover:scale-105'>
                     <p className="justify-center items-center flex text-black  text-3xl dark:text-white border-b-[3px] border-black dark:border-white ">Description</p>
                     <p className='text-lg dark:text-gray-300 text-black my-2 p-2'>{details?.description}</p>
                 </div>
                 
-                <div className='w-1/2 px-2 my-2 ml-5 hover:scale-105'>
+                <div className='max-md:w-full w-1/2 px-2 my-2 max-md:ml-0 ml-5 hover:scale-105'>
                     <p className="justify-center items-center flex text-black  text-3xl dark:text-white border-b-[3px] border-black dark:border-white ">Working</p>
                     <p className='text-lg dark:text-gray-300 text-black my-2 p-2'>how does this work</p>
                 </div>
