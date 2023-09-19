@@ -1,4 +1,6 @@
+import Link from 'next/link';
 import React, { useContext } from 'react'
+import { FaExternalLinkAlt } from 'react-icons/fa';
 
 const ProjectCard = ({details}) => {
     console.log(details)
@@ -12,8 +14,15 @@ const ProjectCard = ({details}) => {
   return (
     <div className="mt-5 w-full min-h-screen rounded-3xl shadow-2xl dark:text-white dark:bg-gradient-to-b dark:from-gray-500 dark:to-black">
         <div className='flex flex-col items-center justify-center p-10'>
-            <div className="text-5xl font-bold mb-5 hover:underline tracking-wide ">
+            <div className="text-5xl font-bold mb-5 hover:underline tracking-wide flex gap-2">
                 {details?.title}
+                
+                {details?.code && (
+                    <a href={details?.code} target="_blank" rel="noopener noreferrer" title='github-link'>
+                        <FaExternalLinkAlt className='w-5 h-5' />
+                    </a>
+                )}
+
             </div>
             <div className="flex max-md:flex-col max-md:items-center w-full justify-around text-gray-600 tracking-wide leading-[35px] dark:text-white ">
                 <div className='max-md:w-full w-1/2 px-2 my-2 max-md:ml-0 ml-5 hover:scale-105'>
