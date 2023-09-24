@@ -1,5 +1,6 @@
 import os
 import joblib
+import pickle
 
 def load_model():
     # Get the directory of the current script
@@ -12,11 +13,24 @@ def load_model():
     loaded_model = joblib.load(joblib_file_path)
     return loaded_model
 
+def lm():
+    # Get the directory of the current script
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+
+    # Construct the absolute path to the .pkl file
+    pkl_file_path = os.path.join(script_dir, 'car_classifier.pkl')
+
+    # Load the model
+    with open(pkl_file_path, 'rb') as file:
+        loaded_model = pickle.load(file)
+
+    return loaded_model
+
 
 import numpy as np  # Import numpy for NaN checks
 
 def classify(buying, maint, doors, persons, lug_boot, safety):
-    car_model = load_model()
+    car_model = lm()
 
     if buying == 'vhigh':
         b = 0
