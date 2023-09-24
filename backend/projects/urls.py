@@ -1,6 +1,6 @@
 from django.urls import path
-from .views import MyAPIView
+from .views import CarClassiferView
 
 urlpatterns = [
-    path('', MyAPIView.as_view())
+    path('', CarClassiferView.as_view())
 ]
