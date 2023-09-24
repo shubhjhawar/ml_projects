@@ -41,6 +41,7 @@ const ProjectCard = ({details}) => {
                 <div className="rounded-2xl absolute top-0 left-0 w-full h-full bg-black opacity-50" style={backgroundStyle}></div> {/* Add the dark overlay */}
                 <div className="absolute inset-0 flex items-center justify-center">
                     the actual project
+                    {details?.model}
                 </div>
             </div>
         </div>
