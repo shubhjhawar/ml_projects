@@ -7,8 +7,8 @@ const ProjectCard = ({details}) => {
 
     const backgroundStyle = {
         backgroundImage: `url(${details?.icon.src})`,
-        backgroundSize: 'contain', // You can adjust this based on your design preferences
-        backgroundPosition: 'center', // You can adjust this based on your design preferences
+        backgroundSize: 'contain', 
+        backgroundPosition: 'center', 
     };
 
   return (
@@ -37,10 +37,9 @@ const ProjectCard = ({details}) => {
             </div>
 
 
-            <div className="rounded-2xl shadow-2xl w-full h-screen relative">
-                <div className="rounded-2xl absolute top-0 left-0 w-full h-full bg-black opacity-50" style={backgroundStyle}></div> {/* Add the dark overlay */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                    the actual project
+            <div className="rounded-2xl shadow-2xl w-full h-screen relative ">
+                <div className="rounded-2xl absolute top-0 left-0 w-full h-full bg-black opacity-50" style={backgroundStyle}></div>
+                <div className="absolute inset-0 flex items-center justify-center overflow-y-auto">
                     {details?.model}
                 </div>
             </div>

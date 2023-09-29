@@ -5,7 +5,7 @@ from rest_framework import status
 from .utils.car_classifier import load_model, classify, test
 
 class CarClassiferView(APIView):
-    def get(self, request):
+    def post(self, request):
         buying = request.data.get('buying', '')
         maint = request.data.get('maint', '')
         doors = request.data.get('doors', '')
