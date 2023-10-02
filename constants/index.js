@@ -66,7 +66,7 @@ const regressionModels = {
             icon: redcar,
             code: 'https://github.com/shubhjhawar/CAR-PRICE-ESTIMATOR',
             working: "",
-            model: <CarClassifier />,
+            model: <CarPriceEstimator />,
         },
         {
             title: "Real Estate Price Estimator",
