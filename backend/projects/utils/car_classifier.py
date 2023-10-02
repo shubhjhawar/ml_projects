@@ -30,7 +30,7 @@ def lm():
 import numpy as np  # Import numpy for NaN checks
 
 def classify(buying, maint, doors, persons, lug_boot, safety):
-    car_model = load_model()
+    car_model = lm()
 
     if buying == 'vhigh':
         b = 0
