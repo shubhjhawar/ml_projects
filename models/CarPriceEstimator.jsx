@@ -31,7 +31,7 @@ const CarPriceEstimator = () => {
 
   const predictPrice = async () => {
     try {
-      const response = await fetch('http://localhost:8000/api/regression_car', {
+      const response = await fetch('https://ml-projects.onrender.com/api/regression_car', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
