@@ -43,7 +43,7 @@ const classificationModels = {
             icon: loan,
             code: 'https://github.com/shubhjhawar/Loan-Application-Status',
             working: "",
-            model: <CarClassifier />,
+            model: <LoanApplication />,
         },
         {
             title: "Fashion MNIST",
