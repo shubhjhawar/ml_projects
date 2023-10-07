@@ -27,7 +27,7 @@ const classificationModels = {
             description: "based on the information provided about the tumour, the models helps us find out if it is benign or malignant",
             icon: breastc,
             working: "",
-            model: <CarClassifier />,
+            model: <BreastCancer />,
         },
         {
             title: "Cifar 10 Image Classification",
@@ -35,7 +35,7 @@ const classificationModels = {
             icon: cifar,
             code: 'https://github.com/shubhjhawar/CIFAR-10-IMAGE-CLASSIFICATION',
             working: "",
-            model: <CarClassifier />,
+            model: <Cifar10 />,
         },
         {
             title: "Loan Application",
@@ -51,7 +51,7 @@ const classificationModels = {
             icon: fashion,
             code: 'https://github.com/shubhjhawar/Fashion-MNIST',
             working: "",
-            model: <CarClassifier />,
+            model: <Fashion />,
         },
     ]
 }
@@ -74,7 +74,7 @@ const regressionModels = {
             icon: real,
             code: 'https://github.com/shubhjhawar/real-estate-prize-predictor',
             working: "",
-            model: <CarClassifier />,
+            model: <REPricePredictor />,
         },
         {
             title: "Stock Price Predictor",
@@ -82,7 +82,7 @@ const regressionModels = {
             icon: stock,
             code: 'https://github.com/shubhjhawar/Stock-Prize-Prediction',
             working: "",
-            model: <CarClassifier />,
+            model: <StockPricePredictor />,
         },
     ]
 }
@@ -97,7 +97,7 @@ const MiscModels = {
             icon: catvdog,
             code: 'https://github.com/shubhjhawar/CATS-VS-DOGS',
             working: "",
-            model: <CarClassifier />,
+            model: <CatDog />,
         },
     ]
 }
