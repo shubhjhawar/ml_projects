@@ -2,7 +2,7 @@ import React from 'react'
 
 const REPricePredictor = () => {
   return (
-    <div>REPricePredictor</div>
+    <div>Real Estate Price Predictor - Coming Soon!</div>
   )
 }
 

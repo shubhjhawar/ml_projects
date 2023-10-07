@@ -2,7 +2,7 @@ import React from 'react'
 
 const BreastCancer = () => {
   return (
-    <div>BreastCancer</div>
+    <div>BreastCancer Model - Coming Soon!</div>
   )
 }
 
