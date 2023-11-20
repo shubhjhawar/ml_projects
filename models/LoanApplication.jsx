@@ -26,7 +26,7 @@ const LoanApplication = () => {
   const loanPrediction = async () => {
     try {
       setisLoading(true);
-      const response = await fetch('https://ml-projects.onrender.com/api/loan_application', {
+      const response = await fetch('http://127.0.0.1:8000/api/loan_application', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -147,7 +147,7 @@ const LoanApplication = () => {
       <div className="mt-5">
         <button onClick={loanPrediction} className='uppercase w-full rounded-2xl transition-transform transform hover:scale-105' style={buttonStyle}>
           <p className='text-lg'>Predict</p>
-          <p className="text-lg max-md:hidden block">the approval of Loan</p>
+          <p className="text-lg max-md:hidden block">the approval of My Loan</p>
         </button>
       </div>
 

@@ -39,12 +39,12 @@ const classificationModels = {
         },
         {
             title: "Loan Application",
-            description: "the model predicts if the person applying for a loan would be able to repy it back in time or not",
+            description: "Empowering loan decisions, this model predicts the likelihood of repayment for loan applicants. By leveraging a Decision Tree algorithm, it analyzes crucial factors like income, credit score, and employment status. During training, the model learns from historical data to create a decision-making guide. When a new loan application is submitted, it uses this guide to provide insights into whether the applicant is likely to repay the loan on time or not.",
             icon: loan,
             code: 'https://github.com/shubhjhawar/Loan-Application-Status',
-            working: "",
+            working: "The model uses a Decision Tree algorithm to analyze key factors such as income, credit score, and employment status. During training, it learns patterns from past data to create a decision-making guide. When a new loan application is submitted, the model follows this guide to predict whether the person is likely to repay the loan on time or not.",
             model: <LoanApplication />,
-        },
+        },            
         {
             title: "Fashion MNIST",
             description: "works same as CIFAR10 but on fashion articles and predicts clothing items",
