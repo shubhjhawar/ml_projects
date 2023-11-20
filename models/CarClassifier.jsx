@@ -27,7 +27,7 @@ const CarClassifier = () => {
 
   const classifyCar = async () => {
     try {
-      const response = await fetch('https://ml-projects.onrender.com/api/classification_car', {
+      const response = await fetch('http://127.0.0.1:8000/api/classification_car', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

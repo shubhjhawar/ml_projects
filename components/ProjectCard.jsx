@@ -32,7 +32,7 @@ const ProjectCard = ({details}) => {
                 
                 <div className='max-md:w-full w-1/2 px-2 my-2 max-md:ml-0 ml-5 hover:scale-105'>
                     <p className="justify-center items-center flex text-black  text-3xl dark:text-white border-b-[3px] border-black dark:border-white ">Working</p>
-                    <p className='text-lg dark:text-gray-300 text-black my-2 p-2'>how does this work</p>
+                    <p className='text-lg dark:text-gray-300 text-black my-2 p-2'>{details?.working}</p>
                 </div>
             </div>
 
